@@ -10,7 +10,7 @@ const PostCard = ({ post }) => {
         <img
           src={post.featuredImage.url}
           alt={post.title}
-          className="object-top absolute h-80 p-8 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
+          className="object-fit absolute h-80 p-8 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
         />
       </div>
       <h1
@@ -57,7 +57,7 @@ const PostCard = ({ post }) => {
         <Link href={`/post/${post.slug}`}>
           <span
             className="transition duration-500 transform hover:-translate-y-1 inline-block 
-          bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
+          bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 mb-2 cursor-pointer"
           >
             Continue Reading
           </span>
